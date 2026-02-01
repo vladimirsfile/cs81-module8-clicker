@@ -20,6 +20,22 @@
 
         let count = 0;
 
+        cookieButton.addEventListener("click", function() {
+            count++;
+            counter.textContent = count;
+
+            if (count >= 100) {
+                progressDisplay.textContent = "You win! Maybe take a break";
+            } else if (count >= 50) {
+                progressDisplay.textContent = "Are you still clicking?";
+            } else if (count >= 25) {
+                progressDisplay.textContent = "Wow, that's a lot of cookies";
+            } else if (count >= 10) {
+                progressDisplay.textContent = "You're just getting started";
+            }
+
+        });
+
     </script>
     
 </body>
