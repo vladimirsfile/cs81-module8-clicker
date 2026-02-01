@@ -6,9 +6,9 @@
     <title>Cookie Clicker Tracker</title>
 </head>
 <body>
-    <button id="button">Cookie 🍪</button>
+    <button id="button">Meow 🐈</button>
     <div>
-        <h4>Total number of cookies: </h4>
+        <h4>Total number of CATS: </h4>
         <span id="counting">0</span>
     </div>
     <p id="progress">Progress update</p>
@@ -25,13 +25,18 @@
             counter.textContent = count;
 
             if (count >= 100) {
-                progressDisplay.textContent = "You win! Maybe take a break";
+                progressDisplay.textContent = "Cats are taking over the world!!";
+                document.body.style.backgroundColor = "purple";
+                document.body.style.color = "white";
             } else if (count >= 50) {
-                progressDisplay.textContent = "Are you still clicking?";
+                progressDisplay.textContent = "That's a lot of cats already";
+                document.body.style.backgroundColor = "orange";
             } else if (count >= 25) {
-                progressDisplay.textContent = "Wow, that's a lot of cookies";
+                progressDisplay.textContent = "Wow, it is getting exciting";
+                document.body.style.backgroundColor = "lightgreen";
             } else if (count >= 10) {
-                progressDisplay.textContent = "You're just getting started";
+                progressDisplay.textContent = "Lot's of cats, I love the energy";
+                document.body.style.backgroundColor = "teal";
             }
 
         });
